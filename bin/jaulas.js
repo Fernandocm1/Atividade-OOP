@@ -7,13 +7,6 @@ var jaulas = /** @class */ (function () {
         this.especie = especie;
         this.descJaula = descJaula;
     }
-    // public setJaula(criatura : string){
-    //     this.criatura = criatura;
-    //   //  this.jaulaAdd = Array<criatura> = [];
-    // }
-    // public getJaula() : string{
-    //     return this.criatura;
-    // }
     jaulas.prototype.setDescJaula = function (descJaula) {
         this.descJaula = descJaula;
     };
@@ -41,15 +34,12 @@ var jaulas = /** @class */ (function () {
     jaulas.prototype.addAnimal = function (animal) {
         if (animal instanceof this.especie) {
             if (this.animais.length < this.limiteJaula) {
-                //console.log("O tamanho da lista é este: "+this.animais.length);
                 this.animais.push(animal);
                 console.log(this.limiteJaula);
-                //this.listar();
                 return true;
             }
             else {
                 console.log("Jaula cheia");
-                //console.log(this.listaJaulas[0].animais.length);
                 return false;
             }
         }
@@ -60,12 +50,3 @@ var jaulas = /** @class */ (function () {
     return jaulas;
 }());
 exports.jaulas = jaulas;
-// export class jaulas{
-//     private lista : Array<any>; 
-//     private limiteLista : number ;
-//     constructor(){
-//         this.limiteLista = 0;
-//         this.lista =[];
-//     }
-// // colocar os get e set
-// }

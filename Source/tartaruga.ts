@@ -12,10 +12,6 @@ export class Tartaruga extends Repeteis{
         console.log("Hmmm");
     }
     public andar() : void{
-        //super.andar();// complemento as caracteristicas do mamifero ou posso anular e dizer como sera feito no caso
-       // como faz o cachorro andar, o super chama a classe pai
-       //this.tamanho = '';
-      // this.setTamanho('grande');
         console.log("Tartaruga Andando");
     }
     public setNome(nome:string){

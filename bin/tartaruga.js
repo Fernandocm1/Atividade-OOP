@@ -25,10 +25,6 @@ var Tartaruga = /** @class */ (function (_super) {
         console.log("Hmmm");
     };
     Tartaruga.prototype.andar = function () {
-        //super.andar();// complemento as caracteristicas do mamifero ou posso anular e dizer como sera feito no caso
-        // como faz o cachorro andar, o super chama a classe pai
-        //this.tamanho = '';
-        // this.setTamanho('grande');
         console.log("Tartaruga Andando");
     };
     Tartaruga.prototype.setNome = function (nome) {

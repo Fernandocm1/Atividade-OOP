@@ -1,9 +1,5 @@
-import { Gato } from './gato';
-import { Cachoro } from './cachoro';
 import { Animal } from "./Animal";
 import { Mamifero } from "./mamifero";
-import { Repeteis } from "./repteis";
-import { Aves } from "./aves";
 import { jaulas } from "./jaulas";
 
 
@@ -37,33 +33,6 @@ export class Zoologico {
             if(retornoAnimal==true){
                 break;
             }
-            //console.log("este é o"+ this.listaJaulas[i].addAnimal(animal))
-            /*
-            let jaula = new jaulas();
-            jaula.addAnimal(especieAnimal)==true
-            
-            let tamanho = this.listaJaulas[i].animais.length;
-            let tipoAnimal = this.listaJaulas[i];
-            let especieAnimal=this.listaJaulas[i].getEspecie();
-            let retornoAnimal=animal.classTypeGuard(especieAnimal)
-            if(animal.classTypeGuard(especieAnimal)==true){
-                console.log("Limite da jaula é: "+this.listaJaulas[i].getLimiteJaula());
-                if(tamanho < this.listaJaulas[i].getLimiteJaula() ){
-                    console.log("O tamanho da lista "+i+" é este: "+tamanho);
-                    this.listaJaulas[i].animais.push(animal);
-                    this.listar();
-                    break;
-                }else{
-                    console.log("Jaula cheia");
-                    console.log(this.listaJaulas[0].animais.length);
-                }
-                
-            }else if(i+1==this.listaJaulas.length){
-                console.log("O animal não é do tipo correto!")
-            }
-        let tipo = typeof animal ;
-        console.log(tipo);
-        */
     }
 
     }
